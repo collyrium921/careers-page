@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <img id="hamburgerIcon" class="hamburger" onclick="displayTilesOverlay()" src="images/hamurger2.svg" />
+        <div class="header">
+            <!-- <div> -->
+            <img class="image" src="images/bg_graphic@2x.png" />
+            <!-- </div> -->
+            <!-- <div> -->
+            <img class="backbutton" src="images/back3.svg" width="30" height="30" onclick="displayTilesOverlay(this)" />
+            <!-- </div> -->
+            <h2>Associate Android Developer</h2>
+            <div class="header-titles">
+                <div id="role" class="titles" onclick="scrollToElement(event, 'roleDesc')">Role</div>
+                <div id="skills" class="titles" onclick="scrollToElement(event, 'skillDesc')">Skills</div>
+                <div id="responsibilities" class="titles" onclick="scrollToElement(event, 'responsibilityDesc')">Responsibilities</div>
+                <div id="experience" class="titles" onclick="scrollToElement(event, 'experienceDesc')">Experience</div>
+                <div id="salary" class="titles" onclick="scrollToElement(event, 'salaryDesc')">Salary</div>
+                <div id="perks" class="titles" onclick="scrollToElement(event, 'perksDesc')">Perks</div>
+            </div>
+            <!-- <div> -->
+            <img class="home" src="images/home.svg" width="30" height="30" />
+            <span class="home">Home</span>
+            <!-- </div> -->
+        </div>
+
+        <div class="header-description">
+            <div class="header-background">
+
+            </div>
+            <div class="fixed-position">
+                Associate Android Developer
+            </div>
+            <div class="text" id="roleDesc">
+                <h3>ROLE</h3>
+                <p class="description">
+                    Associate Android Developer
+                </p>
+            </div>
+            <div class="text" id="skillDesc">
+                <h3>Skills</h3>
+                <ul class="description">
+                    <li>Android Architecture and Responsive Design</li>
+                    <li>Proficiency with Android frameworks and Components</li>
+                    <li>Familiarity with Restful API's</li>
+                </ul>
+            </div>
+            <div class="text" id="responsibilityDesc">
+                <h3>Responsibilities</h3>
+                <ul class="description">
+                    <li>Build Advance Applications Android Platform</li>
+                    <li>Collaborate with Cross functional team to design and release new feature</li>
+                    <li>Build Custom reusable libraries</li>
+                </ul>
+            </div>
+            <div class="text" id="experienceDesc">
+                <h3>Experience</h3>
+                <p class="description">
+                    3 - 5 years of developing direct to consumer application
+                </p>
+            </div>
+            <div class="text" id="salaryDesc">
+                <h3>Salary</h3>
+                <p class="description">
+                    7-10 LPA
+                </p>
+            </div>
+            <div class="text" id="perksDesc">
+                <h3>Perks</h3>
+                <ul class="description">
+                    <li>Medical Insurance</li>
+                    <li>Free Refreshments</li>
+                    <li>Birthday Leave</li>
+                    <li>Laptop</li>
+                </ul>
+            </div>
+            <div class="applynow-button">
+                <button id="applyNow" onclick="displayForm()">Apply Now</button>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="crossbutton-form">
+                <img onclick="hideForm()" src="images/crossForm.png" width="30" height="30" />
+            </div>
+            <h2 class="form-heading">Apply for Associate Android Developer</h2>
+            <div class="form">
+                <div class="form-inputbox">
+                    <div class="fullname">
+                        <div class="firstname">
+                            <input type="text" name="" required="" autocomplete="off" />
+                            <label>First Name<span class="required"> *</span></label>
+                        </div>
+                        <div class="lastname">
+                            <input type="text" name="" required="" autocomplete="off" />
+                            <label>Last Name<span class="required"> *</span></label>
+                        </div>
+                    </div>
+                    <div class="mobilenumber">
+                        <input type="text" name="" required="" autocomplete="off" />
+                        <label>Mobile Number<span class="required"> *</span></label>
+                    </div>
+                    <div class="email">
+                        <input type="text" name="" required="" autocomplete="off" />
+                        <label>Email<span class="required"> *</span></label>
+                    </div>
+                </div>
+                <div class="upload-options">
+                    <div>
+                        Upload Resume <span class="required">*</span>
+
+                        <div class="parent">
+                            <input type="file" id="actual-btn" onchange="changeText(this, 'fileChosen', 'trashIcon')" hidden/>
+                            <label class="btn" for="actual-btn">Choose File</label>
+                            <div>
+                                <span id="fileChosen" class="file"></span>
+                                <img id="trashIcon" class="trashIcon" src="images/trash.png" width="20" height="20" onclick="hideFileName(this, 'fileChosen', 'trashIcon')" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Upload Cover letter (optional)
+                        <div class="parent">
+                            <input type="file" id="actual-btn2" onchange="changeText(this, 'fileChosen2', 'trashIcon2')" hidden/>
+                            <label class="btn" for="actual-btn2">Choose File</label>
+                            <div>
+                                <span id="fileChosen2" class="file"></span>
+                                <img id="trashIcon2" class="trashIcon" src="images/trash.png" width="20" height="20" onclick="hideFileName(this, 'fileChosen2', 'trashIcon2')" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-button">
+                <button>Submit</button>
+            </div>
+        </div>
+
+
+        <div class="tiles-overlay">
+            <div class="crossbutton-tiles" onclick="hideTilesOverlay()">
+                X
+            </div>
+            <div class="overlayLabel">Positions</div>
+            <div class="tiles">
+                Director - Technology
+            </div>
+            <div class="tiles">
+                Director - Engineering
+            </div>
+            <div class="tiles">
+                Director - Product
+            </div>
+            <div class="tiles">
+                AVP - IT Infrastructure
+            </div>
+            <div class="tiles">
+                Product Lead
+            </div>
+            <div class="tiles">
+                Tech Lead
+            </div>
+            <div class="tiles">
+                Module Lead
+            </div>
+            <div class="tiles">
+                Lead Front-End Developer
+            </div>
+            <div class="tiles">
+                Lead .Net Developer
+            </div>
+            <div class="tiles">
+                Lead Android Developer
+            </div>
+            <div class="tiles">
+                Lead Ios Developer
+            </div>
+            <div class="tiles">
+                Lead Data Scientist
+            </div>
+            <div class="tiles">
+                Lead Web Development
+            </div>
+            <div class="tiles">
+                Lead Mobile Development
+            </div>
+            <div class="tiles">
+                Lead Designer
+            </div>
+            <div class="tiles">
+                Lead Business Development
+            </div>
+            <div class="tiles">
+                Lead Merchant Alliance
+            </div>
+            <div class="tiles">
+                Lead Marketing
+            </div>
+            <div class="tiles">
+                Senior Ios Developer
+            </div>
+            <div class="tiles">
+                Senior Data Scientist
+            </div>
+            <div class="tiles">
+                Senior Designer
+            </div>
+            <div class="tiles">
+                Associate Front-End Developer
+            </div>
+            <div class="tiles">
+                Associate .Net Developer
+            </div>
+            <div class="tiles">
+                Associate Ios Developer
+            </div>
+            <div class="tiles">
+                Associate Data Scientist
+            </div>
+            <div class="tiles">
+                Associate Business Development
+            </div>
+            <div class="tiles">
+                Associate Marketing
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+*{
+    box-sizing: border-box;
+}
+
+body, 
+html,
+p,
+table,
+td, 
+tr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-size: 16px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+
+#job{
+    display: none;
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+}
+.wrapper{
+    display: block;
+}
+.section-one{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-one-left,
+.section-one-right{
+    width: 50%;
+}
+
+.section-one-left, 
+.section-two,
+.section-three{
+    text-align: center;
+    padding: 8rem 5rem;
+}
+
+.section-four,
+.section-four-mobile{
+    text-align: center;
+}
+
+.section-three{
+    padding-top: 0;
+}
+
+.section-one-left h2,
+.section-two h2,
+.section-three h2,
+.section-four h2,
+.section-four-mobile h2{
+    font-size: 3rem;
+}
+
+.section-three h2,
+.section-four h2,
+.section-four-mobile h2{
+    margin-bottom: 3rem;
+}
+
+.section-one-left p,
+.section-two p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.section-one-right img{
+    width: 45%;
+    margin-left: 15rem;
+    margin-top: 5rem;
+}
+
+.benefits img{
+    width:70px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.benefits{
+    width: 30%;
+    padding: 20px;
+}
+
+h6{
+    margin-top: 3rem;
+margin-bottom: 1rem;
+}
+
+.two{
+    margin-top: 50px;
+}
+
+.section-four-row-one,
+.section-four-row-two{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.departments{
+    text-align: left;
+    /* width: 30%; */
+    margin-left: 5rem;
+}
+
+.department-name{
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    background-color: #E7F6FD;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 40%;
+    font-size: 2.5rem;
+}
+
+.doverlay{
+    background-color: #E7F6FD;
+    position: absolute;
+    padding-top: 8rem;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+
+.section-four{
+    position: relative;
+}
+
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 950px;
+    position: absolute;
+    top: 0;
+    opacity: .94;
+    display: none;
+}
+
+#cross{
+    font-size:3rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#data{
+    background-color: firebrick;
+}
+
+#design{
+    background-color: goldenrod;
+}
+
+.sub-department-name,
+.branch{
+    cursor: pointer;
+    font-size: 2rem;
+    padding-top: 6rem;
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    /* width: 250px; */
+    /* height: 250px; */
+    color: #fff;
+    background-color: #008CBA;
+    border-radius: 50%;
+    width: 0;
+    text-align: center;
+    height: 0;
+    transform: translate(0,0);
+    transition: 1s all;
+    /* transform: translate(-150%, 0%); */
+}
+
+.branch{
+    font-size: 0rem;
+}
+#frontEnd{
+    font-size: 0rem;
+    transform: translate(-270%,0%);
+}
+
+#backend{
+    font-size: 0rem;
+    transform: translate(-255%, -120%);
+}
+
+#ios{
+    font-size: 0rem;
+    transform: translate(-180%, -230%);
+}
+
+#android{
+    font-size: 0rem;
+    transform: translate(-50%, -245%);
+}
+
+#associate{
+    font-size: 0rem;
+    transform: translate(-390%,0%);
+}
+
+#senior{
+    font-size: 0rem;
+    transform: translate(-380%,-120%);
+}
+#lead{
+    font-size: 0rem;
+    transform: translate(-310%,-230%);
+}
+
+.section-four-mobile{
+    display: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: 800px){
+    html,body{
+        font-size: 90%;
+    }
+
+    .section-one-right,
+    .section-four{
+        display: none;
+    }
+
+    .section-one-left{
+        width: 100%;
+    }
+
+    .section-four-mobile{
+        display: block;
+    }
+
+    .section-four-row-one{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .departments{
+        width: 32%;
+        margin: auto;
+    }
+
+    .department-name{
+        width: 250px;
+        height: 250px;
+        margin-top: 6rem;
+    }
+
+    .mobile-dep{
+        margin-top: 6rem;
+        display: none;
+        transition: .5s;
+        margin-left: 5%;
+    }
+
+    .mobile-dep div{
+        cursor: pointer;
+        font-size: 2rem;
+        margin:2rem 0;
+    }
+
+    #profiles div{
+        font-size: 1.5rem;
+        color: #008CBA;
+    }
+
+    #engineer div{
+        color: #008CBA;
+    }
+
+    #eng{
+        color: #008CBA;
+    }
+
+    #dat{
+        color: firebrick;
+    }
+
+    #des{
+        color: goldenrod;
+    }
+}

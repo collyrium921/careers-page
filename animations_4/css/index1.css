@@ -1,0 +1,214 @@
+body, html,
+p,
+table,
+td, 
+tr{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+#job{
+     display: none;
+     margin: auto;
+     font-size: 40px;
+     text-align: center;
+}
+
+a{
+    /* position: absolute; */
+    text-decoration: none;
+    padding: 10px;
+    /* top: 130px; */
+    /* left: 30px; */
+    background-color: darkslategrey;
+    color: white;
+    /* margin-top: 20px; */
+}
+
+.wrapper{
+    width: 100%;
+    background-color: #fff;
+}
+
+.fixed-element{
+    width: 45%;
+    height: 890px;
+    position: fixed;
+    background-color: #E7F6FD;
+    border-radius: 50%;
+    right: -9rem;
+    top: -9rem;
+}
+.section-one{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-section-one{
+    width: 50%;
+    text-align: left;
+    padding: 10rem 2rem 0 13rem;
+} 
+.right-section-one{
+    width: 50%;
+    /* text-align: center; */
+    opacity: .9;
+}
+
+.right-section-one img{
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.one-team{
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.one-team-para{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.section-two, .section-three, .section-four{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section-two p{
+    font-size: 1.5rem;
+}
+
+input{
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    margin-left: 12rem;
+    margin-top: 5rem;
+    padding: 0.75rem 1rem;
+    outline: none;
+    margin-right: 1rem;
+}
+
+button{
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    margin-bottom: 0.5rem;
+    font-family: Roboto, -apple-system, "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 28, 31);
+    outline: none;
+}
+
+.benefits img{
+    width:70px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.benefits{
+    width: 30%;
+    padding: 20px;
+}
+h6{
+    margin-top: 3rem;
+margin-bottom: 1rem;
+}
+.two{
+    margin-top: 50px;
+}
+
+.section-four h2
+{
+    margin-bottom: 5rem;
+}
+
+.section-four{
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+
+.container{
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    padding-top: 100px;
+}
+
+.container p{
+    width: 300px;
+    height: 300px;
+    background-color: #E7F6FD;
+    text-align: center;
+    padding-top: 11%;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.text p{
+    width: 300px;
+    color: #fff;
+    height: 300px;
+    background-color:#008CBA;
+    text-align: center;
+    padding-top: 11%;
+    border-radius: 50%;
+    font-size: 30px;
+    transform: translate(-30%, 30%);
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.text p{
+    position: absolute;
+    /* width: 250px; */
+    color: #fff;
+    /* height: 250px; */
+    background-color: #008CBA;
+    text-align: center;
+    padding-top: 6rem;
+    border-radius: 50%;
+    transition: all .5s;
+    /* font-size: 30px; */
+    /* transform: translate(100%, -200%); */
+    opacity: .9;
+    font-size: 0;
+    width: 0;
+    height: 100%;
+    transform: translate(0, 0);
+}
+
+.container:hover #engineering{
+    font-size: 30px;
+    transform: translate(100%, -50%);
+    width: 250px;
+    height: 250px;
+}

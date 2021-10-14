@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea</title>
+    <link rel="stylesheet" href="../css/index3.css">
+</head>
+<body>
+    <div id="job">
+        Associate .NET Developer
+    </div>
+    <div class="wrapper">
+        <!-- <div class="fixed-element"></div> -->
+        <div class="section-one">
+            <div class="left-section-one">
+                <h2 class="one-team">OneTeam</h2>
+                <p class="one-team-para">
+                    We are young (well, in our mind we are really young!) innovators and problem solvers. The Founding Team believes in making a difference by aggressively driving change and innovation in FinTech space. 
+                    OneBanc was founded in October 2019, by IIT- B Alumni Vibhore Goyal and Harpreet S. Grover. They earlier founded CoCubes which was acquired by Aon in November 2016.
+                </p>
+
+                <h2 class="one-team" style="margin-top: 5rem;">OneOpportunity</h2>
+                <p class="one-team-para">
+                    Our journey has just begun. This gives willing candidates a steep learning curve, plenty of room to explore, innovate and be a part of the core team that believes in reshaping the financial industry. What more?? We promise you lots of fun along the journey! 
+                </p>
+                <input placeholder="Explore all 65 opportunities"><button>Explore</button>
+            </div>
+            <div class="right-section-one">
+                <img src="../images/phone.png" alt="mobile image">
+            </div>
+        </div>
+        <div class="section-two">
+            <h2>OneExpectation</h2>
+            <p>
+                We are looking for fast paced, start-up enthusiasts who understand the financial world and want to look at it from the eye of a customer, those who can look at a problem as a whole and connect the next dots 
+            </p>
+        </div>
+        <div class="section-three">
+            <h2>Benefits</h2>
+            <div class="row one">
+                <div class="benefits b1">
+                    <img src="../images/health.svg">
+                    <h6>Lead a healthy life</h6>
+                    <p>
+                        We offer generous coverage for health, dental, vision, life, and disability insurance for you and your dependents.
+                    </p>
+                </div>
+                <div class="benefits b2">
+                    <img src="../images/careers-benefits-02.svg">
+                    <h6>Take time off</h6>
+                    <p>
+                        You work hard, so you deserve time for yourself. We offer paid time off so you can always be at your best.
+                    </p>
+                </div>
+                <div class="benefits b3">
+                    <img src="../images/careers-benefits-04.svg">
+                    <h6> Learn and Grow</h6>
+                    <p>
+                        No matter where you are in your career, there’s more to learn. We offer a significant stipend toward your personal career development.
+                    </p>
+                </div>
+            </div>
+            <div class="row two">
+                <div class="benefits b4">
+                    <img src="../images/careers-benefits-06.svg">
+                    <h6>Get Active</h6>
+                    <p>
+                        Your health is important to us. You can apply your monthly wellness stipend toward fitness classes and memberships.
+                    </p>
+                </div>
+                <div class="benefits b5">
+                    <img src="../images/careers-benefits-07.svg">
+                    <h6>be there when it counts</h6>
+                    <p>
+                        In addition to parental leave, you'll find support in the office with our dedicated mother’s room and Parents@onebanc employee resource group.
+                    </p>
+                </div>
+                <div class="benefits b6">
+                    <img src="../images/careers-benefits-09.svg">
+                    <h6>Know the product</h6>
+                    <p>
+                        We want you to understand the product firsthand. We offer a monthly stipend for buying with Affirm.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-four">
+            <h2>Become a OneBanc'er</h2>
+            <div class="container" onclick="overlay()">
+                <p class="text">Technology</p>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="container center">
+            <p class="text">Technology</p>
+        </div>
+        <div id= "engineering" class="branch" onclick="backend()">
+            <p class="text">Engineering</p>
+        </div>
+        <div id= "design" class="branch">
+            <p class="text">Design</p>
+        </div>
+        <div id= "data" class="branch">
+            <p class="text">Data</p>
+        </div>
+        <div id= "backend" class="branch" onclick="job()">
+            <p class="text">Backend</p>
+        </div>
+        <div id= "post" class="branch" onclick="showJob()">
+            <p id="developer" class="text">Associate .Net Developer</p>
+        </div>
+        <div id="cross" onclick="cross()">x</div>
+    </div>
+    <script src="../js/index3.js"></script>
+</body>
+</html>

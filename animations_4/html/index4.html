@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>idea4</title>
+    <link rel="stylesheet" href="../css/index4.css" />
+</head>
+<body>
+    <div id="job"></div>
+    <div class="wrapper">
+        <div class="section-one">
+            <div class="section-one-left">
+                <h2>OneTeam</h2>
+                <p>
+                    We are young (well, in our mind we are really young!) innovators and problem solvers. The Founding Team believes in making a difference by aggressively driving change and innovation in FinTech space. 
+                    OneBanc was founded in October 2019, by IIT- B Alumni Vibhore Goyal and Harpreet S. Grover. They earlier founded CoCubes which was acquired by Aon in November 2016.
+                </p>
+                <h2>OneOpportunity</h2>
+                <p>
+                    Our journey has just begun. This gives willing candidates a steep learning curve, plenty of room to explore, innovate and be a part of the core team that believes in reshaping the financial industry. What more?? We promise you lots of fun along the journey!
+                </p>
+                <div class="search-bar">
+                    <input placeholder="Explore all 65 opportunities" />
+                    <button>Explore</button>
+                </div>
+            </div>
+            <div class="section-one-right">
+                <img src="../images/phone.png" alt="mobile image">
+            </div>
+        </div>
+        <div class="section-two">
+            <h2>OneExpectation</h2>
+            <p>
+                We are looking for fast paced, start-up enthusiasts who understand the financial world and want to look at it from the eye of a customer, those who can look at a problem as a whole and connect the next dots 
+            </p>
+        </div>
+        <div class="section-three">
+            <h2>Benefits</h2>
+            <div class="row one">
+                <div class="benefits b1">
+                    <img src="../images/health.svg">
+                    <h6>Lead a healthy life</h6>
+                    <p>
+                        We offer generous coverage for health, dental, vision, life, and disability insurance for you and your dependents.
+                    </p>
+                </div>
+                <div class="benefits b2">
+                    <img src="../images/careers-benefits-02.svg">
+                    <h6>Take time off</h6>
+                    <p>
+                        You work hard, so you deserve time for yourself. We offer paid time off so you can always be at your best.
+                    </p>
+                </div>
+                <div class="benefits b3">
+                    <img src="../images/careers-benefits-04.svg">
+                    <h6> Learn and Grow</h6>
+                    <p>
+                        No matter where you are in your career, there’s more to learn. We offer a significant stipend toward your personal career development.
+                    </p>
+                </div>
+            </div>
+            <div class="row two">
+                <div class="benefits b4">
+                    <img src="../images/careers-benefits-06.svg">
+                    <h6>Get Active</h6>
+                    <p>
+                        Your health is important to us. You can apply your monthly wellness stipend toward fitness classes and memberships.
+                    </p>
+                </div>
+                <div class="benefits b5">
+                    <img src="../images/careers-benefits-07.svg">
+                    <h6>Be there when it counts</h6>
+                    <p>
+                        In addition to parental leave, you'll find support in the office with our dedicated mother’s room and Parents@onebanc employee resource group.
+                    </p>
+                </div>
+                <div class="benefits b6">
+                    <img src="../images/careers-benefits-09.svg">
+                    <h6>Know the product</h6>
+                    <p>
+                        We want you to understand the product firsthand. We offer a monthly stipend for buying with Affirm.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-four">  
+            <h2>Become a OneBanc'er</h2>
+            <div class="section-four-row-one">
+                <div class="departments">
+                    <div class="department-name" onclick="showOverlay(event, 'Technology')">Technology</div>
+                </div>
+                <div class="departments">
+                    <div class="department-name"  onclick="showOverlay(event, 'Operations')">Operations</div>
+                </div> 
+                <div class="departments">
+                    <div class="department-name"  onclick="showOverlay(event, 'HR')">HR</div>
+                </div>
+            </div>
+            <div class="section-four-row-two">
+                <div class="departments">
+                    <div class="department-name"  onclick="showOverlay(event, 'Sales')">Sales</div>
+                </div>
+                <div class="departments">
+                    <div class="department-name"  onclick="showOverlay(event, 'Finance')">Finance</div>
+                </div> <div class="departments">
+                    <div class="department-name"  onclick="showOverlay(event, 'Marketing')">Marketing</div>
+                </div>
+            </div>
+            <div class="overlay" id="overlay">
+                <div class="departments">
+                    <div class="department-name doverlay" id="departmentValue">Technogy</div>
+                </div>
+                <div class="sub-department">
+                    <div class="sub-department-name" id="engineering" onclick="showBranch()">Engineering</div>
+                </div>
+                <div class="sub-department">
+                    <div class="sub-department-name" id="design">Design</div>
+                </div><div class="sub-department">
+                    <div class="sub-department-name" id="data">Data</div>
+                </div>
+
+
+
+                <div class="departments">
+                    <div class="branch" id="frontEnd" onclick="showJobs()">Front-end</div>
+                </div>
+                <div class="departments">
+                    <div class="branch" id="backend">Backend</div>
+                </div>
+                <div class="departments">
+                    <div class="branch" id="ios">Ios</div>
+                </div>
+                <div class="departments">
+                    <div class="branch" id="android">Android</div>
+                </div>
+
+                <div class="departments">
+                    <div class="branch" id="associate" onclick="showProfile(event, 'Associate Front-end Developer')">Associate Front-end Developer</div>
+                </div>
+                <div class="departments">
+                    <div class="branch" id="senior">Senior Associate Front-end Developer</div>
+                </div>
+                <div class="departments">
+                    <div class="branch" id="lead">Lead Front-end Developer</div>
+                </div>
+                <div id="cross" onclick="cross()">x</div>
+            </div>
+        </div>
+
+        <div class="section-four-mobile">
+            <h2>Become a OneBanc'er</h2>
+            <div class="section-four-row-one">
+            <div class="content">
+                <div class="departments" id="technology">
+                    <div class="department-name" onclick="displayDepartment()">Technology</div>
+                </div>
+                <div class="mobile-dep" id="mobile-dep">
+                    <div onclick="engineer()" id="eng">Engineering</div>
+                    <div id="dat">Data</div>
+                    <div id="des">Design</div>
+                </div>
+                <div class="mobile-dep" id="engineer" >
+                    <div onclick="profiles()">Front-end</div>
+                    <div>Backend</div>
+                    <div>Android</div>
+                    <div>Ios</div>
+                </div>
+                <div class="mobile-dep" id="profiles">
+                    <div onclick="showProfile(event, 'Associate Front-end Developer')">Associate Front-end Developer</div>
+                    <div>Senior Associate Front-end Developer</div>
+                    <div>Lead Front-end Developer</div>
+                </div>
+            </div>
+                <div class="departments">
+                    <div class="department-name">Operations</div>
+                </div> 
+                <div class="departments">
+                    <div class="department-name">HR</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/index4.js"></script>
+</body>
+</html>
